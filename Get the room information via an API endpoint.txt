@@ -1,0 +1,100 @@
+Request
+--------------
+
+curl --location --request GET 'https://rocketchattest.centralindia.cloudapp.azure.com/api/v1/rooms.info?roomId=YJ5Nn7reQH5unYcfYrocket.cat' \
+--header 'X-Auth-Token: oxJwvpxlOajUZ-H7X-aqXl_kGMIkDHizG3Lp03h41y4' \
+--header 'X-User-Id: YJ5Nn7reQH5unYcfY'
+
+
+Response
+----------------
+
+{
+    "room": {
+        "_id": "YJ5Nn7reQH5unYcfYrocket.cat",
+        "t": "d",
+        "usernames": [
+            "dhavalk",
+            "rocket.cat"
+        ],
+        "usersCount": 2,
+        "msgs": 1,
+        "ts": "2022-09-19T18:37:18.497Z",
+        "uids": [
+            "YJ5Nn7reQH5unYcfY",
+            "rocket.cat"
+        ],
+        "default": false,
+        "ro": false,
+        "sysMes": true,
+        "_updatedAt": "2022-09-19T18:37:18.631Z",
+        "_USERNAMES": [
+            "dhavalk",
+            "rocket.cat"
+        ],
+        "lastMessage": {
+            "rid": "YJ5Nn7reQH5unYcfYrocket.cat",
+            "msg": "*Update your Rocket.Chat*\nNew version available (5.1.2)\nhttps://github.com/RocketChat/Rocket.Chat/releases/tag/5.1.2",
+            "ts": "2022-09-19T18:37:18.519Z",
+            "u": {
+                "_id": "rocket.cat",
+                "username": "rocket.cat",
+                "name": "Rocket.Cat"
+            },
+            "_id": "4hLrj3Psv8DaAPKYm",
+            "_updatedAt": "2022-09-19T18:37:18.613Z",
+            "urls": [
+                {
+                    "url": "https://github.com/RocketChat/Rocket.Chat/releases/tag/5.1.2"
+                }
+            ],
+            "mentions": [],
+            "channels": [],
+            "md": [
+                {
+                    "type": "PARAGRAPH",
+                    "value": [
+                        {
+                            "type": "BOLD",
+                            "value": [
+                                {
+                                    "type": "PLAIN_TEXT",
+                                    "value": "Update your Rocket.Chat"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "PARAGRAPH",
+                    "value": [
+                        {
+                            "type": "PLAIN_TEXT",
+                            "value": "New version available (5.1.2)"
+                        }
+                    ]
+                },
+                {
+                    "type": "PARAGRAPH",
+                    "value": [
+                        {
+                            "type": "LINK",
+                            "value": {
+                                "src": {
+                                    "type": "PLAIN_TEXT",
+                                    "value": "https://github.com/RocketChat/Rocket.Chat/releases/tag/5.1.2"
+                                },
+                                "label": {
+                                    "type": "PLAIN_TEXT",
+                                    "value": "https://github.com/RocketChat/Rocket.Chat/releases/tag/5.1.2"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "lm": "2022-09-19T18:37:18.519Z"
+    },
+    "success": true
+}

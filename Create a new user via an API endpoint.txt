@@ -1,0 +1,44 @@
+Request
+--------------
+curl --location --request POST 'https://rocketchattest.centralindia.cloudapp.azure.com/api/v1/users.create' \
+--header 'X-Auth-Token: oxJwvpxlOajUZ-H7X-aqXl_kGMIkDHizG3Lp03h41y4' \
+--header 'X-User-Id: YJ5Nn7reQH5unYcfY' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "email": "dhaval.99@yahoo.com",
+    "name": "rocket_admin",
+    "password": "rocket_admin@123$",
+    "username": "rocket_admin"
+}'
+
+
+
+Response
+----------------
+
+{
+    "user": {
+        "_id": "qu4pWANagfjZ5XsBi",
+        "createdAt": "2022-09-19T22:32:26.161Z",
+        "username": "rocket_admin",
+        "emails": [
+            {
+                "address": "dhaval.99@yahoo.com",
+                "verified": false
+            }
+        ],
+        "type": "user",
+        "status": "offline",
+        "active": true,
+        "_updatedAt": "2022-09-19T22:32:26.512Z",
+        "__rooms": [
+            "GENERAL"
+        ],
+        "roles": [
+            "user"
+        ],
+        "name": "rocket_admin",
+        "settings": {}
+    },
+    "success": true
+}
